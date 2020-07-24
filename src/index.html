@@ -6,8 +6,41 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.16/toaster.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JS -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.2/ui-bootstrap-tpls.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-tags-input/3.0.0/ng-tags-input.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.16/toaster.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.js"></script>
+  <script href="app/index.js"></script>
+  <script type="text/javascript">
+    function sendEmail() {
+      this.fname = document.getElementById("fname").value;
+      this.lname = document.getElementById("lname").value;
+      Email.send({
+          SecureToken:'ac8ff012-7e6c-4215-b793-abaaf6ea27ee',
+          To : 'kimberlykayschulze@gmail.com, kayochapin@aol.com',
+          From : "myapphysicsplan@gmail.com",
+          Subject : "My AP Physics Plan Works!",
+          Body : "Hello, " + this.fname + " " + this.lname + ". Thank you for signing up with My AP Physics Plan." +
+          " I will be contacting you shortly.  ~ Kim Schulze"
+        })
+        .then(
+          message => alert("Mail sent successfully.")
+           );
+         }
+  </script>
+
+<body class="mat-typography">
   <app-root></app-root>
 </body>
 </html>
