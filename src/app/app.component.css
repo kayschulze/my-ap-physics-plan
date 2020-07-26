@@ -21,6 +21,12 @@ p {
   margin: 0;
 }
 
+p.contain {
+  border-style: double;
+  border-width: 5px;
+}
+
+
 .spacer {
   flex: 1;
 }

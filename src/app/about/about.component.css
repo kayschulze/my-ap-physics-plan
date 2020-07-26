@@ -1,0 +1,14 @@
+.question: {
+  color: red;
+}
+
+h2 {
+  color:  green;
+  font-size: 30px;
+}
+
+.future: {
+  color: blue;
+  font-size: 45px;
+  text-align: center;
+}
