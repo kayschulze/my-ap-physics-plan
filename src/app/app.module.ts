@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { AboutComponent } from './about/about.component';
@@ -35,7 +36,8 @@ import { MatInputModule } from '@angular/material/input';
     MatSliderModule,
     MatTabsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

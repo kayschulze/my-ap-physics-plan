@@ -1,1 +1,215 @@
-<p>kinematics works!</p>
+<div class="container">
+  <h2>Kinematics Equation Finder</h2>
+  <p>Kinematics is the study of objects at motion with constant acceleration.
+    One early challenge of physics is determining which equation to use.  There
+    are four main kinematics equations.  To find the correct equation, it
+    is important to have a plan.  That plan includes: </p>
+  <ol>
+    <li>Reading and/or understanding the problem.  Drawing a diagram helps.</li>
+    <li>Determining which quantities are known.</li>
+    <li>Determining which quantity you are looking for.  This is unknown.</li>
+    <li>Using this information to find the correct equation.
+  </ol>
+  <p>This Kinematics Equation Generator allows you to determine which equation
+    will be most helpful with your given problem.  For these five variables,
+    identify:</p>
+  <ul>
+    <li>Three values that you know.</li>
+    <li>One value that is unknown - but you are trying to calculate.</li>
+    <li>One value that is not applicable - isn't involved in this problem.</li>
+  </ul>
+  <p>Note:  Don't underestimate the importance of the variable that is not
+    applicable. You will learn to use this to determine which basic equation
+    form to use.</p>
+
+  <form #variableInputForm="ngForm" (ngSubmit)="onSubmit(variableInputForm)" novalidate>
+
+    <table>
+      <tr>
+        <div id = "displacementChoice">
+          <td>
+            <p>Displacement</p>
+          </td>
+          <td>
+            <input type="radio" id="known" name="displacement" value="known" ngModel>
+            <label for="known">Known</label>
+          </td>
+          <td>
+            <input type="radio" id="unknown" name="displacement" value="unknown" ngModel>
+            <label for="unknown">Unknown</label>
+          </td>
+          <td>
+            <input type="radio" id="NA" name="displacement" value="N/A" ngModel>
+            <label for="NA">Not Applicable</label><br>
+          </td>
+        </div>
+      </tr>
+
+      <tr>
+        <div id = "initial-velocity-choice">
+          <td>
+            <p>Initial Velocity</p>
+          </td>
+          <td>
+            <input type="radio" id="known1" name="v0-value" value="known" ngModel>
+            <label for="known1">Known</label>
+          </td>
+          <td>
+            <input type="radio" id="unknown1" name="v0-value" value="unknown" ngModel>
+            <label for="unknown1">Unknown</label>
+          </td>
+          <td>
+            <input type="radio" id="NA1" name="v0-value" value="N/A" ngModel>
+            <label for="NA1">Not Applicable</label><br>
+          </td>
+        </div>
+      </tr>
+
+      <tr>
+        <div id = final-velocity-choice>
+          <td>
+            <p>Final Velocity</p>
+          </td>
+          <td>
+            <input type="radio" id="known2" name="vf-value" value="known" ngModel>
+            <label for="known2">Known</label>
+          </td>
+          <td>
+            <input type="radio" id="unknown2" name="vf-value" value="unknown" ngModel>
+            <label for="unknown2">Unknown</label>
+          </td>
+          <td>
+            <input type="radio" id="NA2" name="vf-value" value="N/A" ngModel>
+            <label for="NA2">Not Applicable</label><br>
+          </td>
+        </div>
+      </tr>
+
+      <tr>
+        <div id = acceleration-choice>
+          <td>
+            <p>Acceleration</p>
+          </td>
+          <td>
+            <input type="radio" id="known3" name="acceleration" value="known" ngModel>
+            <label for="known3">Known</label>
+          </td>
+          <td>
+            <input type="radio" id="unknown3" name="acceleration" value="unknown" ngModel>
+            <label for="unknown3">Unknown</label>
+          </td>
+          <td>
+            <input type="radio" id="NA3" name="acceleration" value="N/A" ngModel>
+            <label for="NA3">Not Applicable</label><br>
+          </td>
+        </div>
+      </tr>
+
+      <tr>
+        <div id = time-choice>
+          <td>
+            <p>Time</p>
+          </td>
+          <td>
+            <input type="radio" id="known4" name="time" value="known" ngModel>
+            <label for="known4">Known</label>
+          </td>
+          <td>
+            <input type="radio" id="unknown4" name="time" value="unknown" ngModel>
+            <label for="unknown4">Unknown</label>
+          </td>
+          <td>
+            <input type="radio" id="NA4" name="time" value="N/A" ngModel>
+            <label for="NA4">Not Applicable</label><br>
+          </td>
+        </div>
+      </tr>
+
+    </table>
+
+    <button class="button" type="submit" id="findEquation">Find Equation</button>
+
+  </form>
+
+
+    <div class="equation101-showing">
+      <img src="/assets/img/Equation101.JPG">
+    </div>
+
+    <div class="equation102-showing">
+      <img src="/assets/img/Equation102.JPG">
+    </div>
+
+    <div class="equation103-showing">
+      <img src="/assets/img/Equation103.JPG">
+    </div>
+
+    <div class="equation104-showing">
+      <img src="/assets/img/Equation104.JPG">
+    </div>
+
+    <div class="equation201-showing">
+      <img src="/assets/img/Equation201.JPG">
+    </div>
+
+    <div class="equation202-showing">
+      <img src="/assets/img/Equation202.JPG">
+    </div>
+
+    <div class="equation203-showing">
+      <img src="/assets/img/Equation203.JPG">
+    </div>
+
+    <div class="equation204-showing">
+      <img src="/assets/img/Equation204.JPG">
+    </div>
+
+    <div class="equation301-showing">
+      <img src="/assets/img/Equation301.JPG">
+    </div>
+
+    <div class="equation302-showing">
+      <img src="/assets/img/Equation302.JPG">
+    </div>
+
+    <div class="equation303-showing">
+      <img src="/assets/img/Equation303.JPG">
+    </div>
+
+    <div class="equation304-showing">
+      <img src="/assets/img/Equation304.JPG">
+    </div>
+
+    <div class="equation401-showing">
+      <img src="/assets/img/Equation401.JPG">
+    </div>
+
+    <div class="equation402-showing">
+      <img src="/assets/img/Equation402.JPG">
+    </div>
+
+    <div class="equation403-showing">
+      <img src="/assets/img/Equation403.JPG">
+    </div>
+
+    <div class="equation404-showing">
+      <img src="/assets/img/Equation404.JPG">
+    </div>
+
+    <div class="equation501-showing">
+      <img src="/assets/img/Equation501.JPG">
+    </div>
+
+    <div class="equation502-showing">
+      <img src="/assets/img/Equation502.JPG">
+    </div>
+
+    <div class="equation503-showing">
+      <img src="/assets/img/Equation503.JPG">
+    </div>
+
+    <div class="equation504-showing">
+      <img src="/assets/img/Equation504.JPG">
+    </div>
+
+</div>
