@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>Kinematics Equation Finder</h2>
+  <h2>Kinematics Equation Finder Application</h2>
   <p>Kinematics is the study of objects at motion with constant acceleration.
     One early challenge of physics is determining which equation to use.  There
     are four main kinematics equations.  To find the correct equation, it
@@ -22,113 +22,111 @@
     applicable. You will learn to use this to determine which basic equation
     form to use.</p>
 
-  <form #variableInputForm="ngForm" (ngSubmit)="onSubmit(variableInputForm)" novalidate>
-
-    <table class="center">
-      <tr>
-        <div id = "displacementChoice">
-          <td>
-            <p>Displacement</p>
-          </td>
-          <td>
-            <input type="radio" id="known" name="displacement" value="known" ngModel>
-            <label for="known">Known</label>
-          </td>
-          <td>
-            <input type="radio" id="unknown" name="displacement" value="unknown" ngModel>
-            <label for="unknown">Unknown</label>
-          </td>
-          <td>
-            <input type="radio" id="NA" name="displacement" value="N/A" ngModel>
-            <label for="NA">Not Applicable</label><br>
-          </td>
+  <div class="tableContainer text-center">
+    <form #variableInputForm="ngForm" (ngSubmit)="onSubmit(variableInputForm)" novalidate>
+        <div class="row">
+          <div id = "displacementChoice">
+            <div class="col-sm-2">
+              <p>Displacement</p>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="known" name="displacement" value="known" ngModel>
+              <label for="known">Known</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="unknown" name="displacement" value="unknown" ngModel>
+              <label for="unknown">Unknown</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="NA" name="displacement" value="N/A" ngModel>
+              <label for="NA">Not Applicable</label><br>
+            </div>
+          </div>
         </div>
-      </tr>
 
-      <tr>
-        <div id = "initial-velocity-choice">
-          <td>
-            <p>Initial Velocity</p>
-          </td>
-          <td>
-            <input type="radio" id="known1" name="v0-value" value="known" ngModel>
-            <label for="known1">Known</label>
-          </td>
-          <td>
-            <input type="radio" id="unknown1" name="v0-value" value="unknown" ngModel>
-            <label for="unknown1">Unknown</label>
-          </td>
-          <td>
-            <input type="radio" id="NA1" name="v0-value" value="N/A" ngModel>
-            <label for="NA1">Not Applicable</label><br>
-          </td>
+        <div class="row">
+          <div id = "initial-velocity-choice">
+            <div class="col-sm-2">
+              <p>Initial Velocity</p>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="known1" name="v0-value" value="known" ngModel>
+              <label for="known1">Known</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="unknown1" name="v0-value" value="unknown" ngModel>
+              <label for="unknown1">Unknown</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="NA1" name="v0-value" value="N/A" ngModel>
+              <label for="NA1">Not Applicable</label><br>
+            </div>
+          </div>
         </div>
-      </tr>
 
-      <tr>
-        <div id = final-velocity-choice>
-          <td>
-            <p>Final Velocity</p>
-          </td>
-          <td>
-            <input type="radio" id="known2" name="vf-value" value="known" ngModel>
-            <label for="known2">Known</label>
-          </td>
-          <td>
-            <input type="radio" id="unknown2" name="vf-value" value="unknown" ngModel>
-            <label for="unknown2">Unknown</label>
-          </td>
-          <td>
-            <input type="radio" id="NA2" name="vf-value" value="N/A" ngModel>
-            <label for="NA2">Not Applicable</label><br>
-          </td>
+        <div class="row">
+          <div id = final-velocity-choice>
+            <div class="col-sm-2">
+              <p>Final Velocity</p>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="known2" name="vf-value" value="known" ngModel>
+              <label for="known2">Known</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="unknown2" name="vf-value" value="unknown" ngModel>
+              <label for="unknown2">Unknown</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="NA2" name="vf-value" value="N/A" ngModel>
+              <label for="NA2">Not Applicable</label><br>
+            </div>
+          </div>
         </div>
-      </tr>
 
-      <tr>
-        <div id = acceleration-choice>
-          <td>
-            <p>Acceleration</p>
-          </td>
-          <td>
-            <input type="radio" id="known3" name="acceleration" value="known" ngModel>
-            <label for="known3">Known</label>
-          </td>
-          <td>
-            <input type="radio" id="unknown3" name="acceleration" value="unknown" ngModel>
-            <label for="unknown3">Unknown</label>
-          </td>
-          <td>
-            <input type="radio" id="NA3" name="acceleration" value="N/A" ngModel>
-            <label for="NA3">Not Applicable</label><br>
-          </td>
+        <div class="row">
+          <div id = acceleration-choice>
+            <div class="col-sm-2">
+              <p>Acceleration</p>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="known3" name="acceleration" value="known" ngModel>
+              <label for="known3">Known</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="unknown3" name="acceleration" value="unknown" ngModel>
+              <label for="unknown3">Unknown</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="NA3" name="acceleration" value="N/A" ngModel>
+              <label for="NA3">Not Applicable</label><br>
+            </div>
+          </div>
         </div>
-      </tr>
 
-      <tr>
-        <div id = time-choice>
-          <td>
-            <p>Time</p>
-          </td>
-          <td>
-            <input type="radio" id="known4" name="time" value="known" ngModel>
-            <label for="known4">Known</label>
-          </td>
-          <td>
-            <input type="radio" id="unknown4" name="time" value="unknown" ngModel>
-            <label for="unknown4">Unknown</label>
-          </td>
-          <td>
-            <input type="radio" id="NA4" name="time" value="N/A" ngModel>
-            <label for="NA4">Not Applicable</label><br>
-          </td>
+        <div class="row">
+          <div id = time-choice>
+            <div class="col-sm-2">
+              <p>Time</p>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="known4" name="time" value="known" ngModel>
+              <label for="known4">Known</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="unknown4" name="time" value="unknown" ngModel>
+              <label for="unknown4">Unknown</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="radio" id="NA4" name="time" value="N/A" ngModel>
+              <label for="NA4">Not Applicable</label><br>
+            </div>
+          </div>
         </div>
-      </tr>
 
-    <button class="button" type="submit" id="findEquation">Find Equation</button>
-
-    </table>
-  </form>
+      <button class="button" type="submit" id="findEquation">Find Equation</button>
+    </form>
+  </div>
 
   <div class="showAnswer">
     <div class="equation101-showing">

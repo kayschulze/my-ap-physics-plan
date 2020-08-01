@@ -1,0 +1,12 @@
+.question {
+  font-weight: bold;
+}
+
+.answer {
+  font-style: italic;
+}
+
+h2 {
+  color:  orange;
+  font-size: 25px;
+}

@@ -1,3 +1,8 @@
+h2 {
+  color:  blue;
+  font-size: 25px;
+}
+
 table, td {
 
 }
@@ -11,6 +16,15 @@ td {
 }
 
 button {
+  text-align: center;
+}
+
+.container {
+  word-wrap: break-word;
+  max-width: 900px;
+}
+
+.tableContainer {
   text-align: center;
 }
 

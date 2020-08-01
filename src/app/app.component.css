@@ -206,6 +206,10 @@ footer a {
   margin-bottom: 28px;
 }
 
+.tab-width {
+  width:  1000px;
+}
+
 .content {
   margin-top: 10px;
 }
