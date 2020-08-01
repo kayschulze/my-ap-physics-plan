@@ -1,14 +1,21 @@
 table, td {
-  border: 1px solid black;
+
 }
 
 table {
-  border-collapse: collapse;
+  table-layout: fixed;
 }
 
 td {
-  text-align: right;
   padding: 15px;
+}
+
+button {
+  text-align: center;
+}
+
+.showAnswer {
+  text-align: center;
 }
 
 .center {
