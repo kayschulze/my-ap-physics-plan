@@ -17,6 +17,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { Component } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MessageSlideComponent } from './message-slide/message-slide.component';
 
 
 
@@ -27,7 +28,8 @@ import { MatInputModule } from '@angular/material/input';
     AboutComponent,
     PhysicsResourcesComponent,
     KinematicsComponent,
-    FaqComponent
+    FaqComponent,
+    MessageSlideComponent
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {

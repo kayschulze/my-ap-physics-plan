@@ -1,0 +1,9 @@
+.mySlides {
+  display: none;
+  border-style: double;
+  border-width: 5px;
+}
+
+.messageText {
+  text-align: center;
+}
