@@ -213,3 +213,9 @@ footer a {
 .content {
   margin-top: 10px;
 }
+
+@media only screen and (max-width:600px) {
+  .mat-tab-group {
+    width: 100%;
+  }
+}
