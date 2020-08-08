@@ -214,8 +214,11 @@ footer a {
   margin-top: 10px;
 }
 
-@media only screen and (max-width:600px) {
-  .mat-tab-group {
+@media only screen and (max-width:1200px) {
+  .mat-tab-group, .tab-width {
     width: 100%;
+  }
+  h1 {
+    font-size: 20px;
   }
 }
