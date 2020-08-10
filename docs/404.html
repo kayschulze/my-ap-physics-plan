@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="styles.8ce01c305f51c38aba79.css"><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyApPhysicsPlan</title>
+  <base href="/my-ap-physics-plan/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.16/toaster.min.css" rel="stylesheet">
+
+  <!-- JS -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.2/ui-bootstrap-tpls.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-tags-input/3.0.0/ng-tags-input.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.16/toaster.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function sendEmail() {
+      this.fname = document.getElementById("fname").value;
+      this.lname = document.getElementById("lname").value;
+      this.email = document.getElementById("email").value;
+      this.message = document.getElementById("message").value;
+      Email.send({
+          SecureToken:'ac8ff012-7e6c-4215-b793-abaaf6ea27ee',
+          To : 'kimberlykayschulze@gmail.com',
+          From : 'myapphysicsplan@gmail.com',
+          Subject : "My AP Physics Plan Works!",
+          Body : "Hello, " + this.fname + " " + this.lname + ",<br> Thank you for signing up with My AP Physics Plan. <br><br>" +
+          "I will be contacting you shortly.  <br>Your message is:  <br>" + this.message + "<br>From email address: " + this.email +
+          "<br>~ Kim Schulze"
+        })
+        .then(
+          message => alert("Mail sent successfully.")
+           );
+          this.contactForm.reset();
+         }
+  </script>
+
+<body class="mat-typography">
+  <app-root></app-root>
+<script src="runtime.e227d1a0e31cbccbf8ec.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="main.3cd902baac0dbf9a5917.js" defer></script></body>
+</html>
