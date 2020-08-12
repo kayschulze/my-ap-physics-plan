@@ -24,27 +24,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.js"
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
       crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    function sendEmail() {
-      this.fname = document.getElementById("fname").value;
-      this.lname = document.getElementById("lname").value;
-      this.email = document.getElementById("email").value;
-      this.message = document.getElementById("message").value;
-      Email.send({
-          SecureToken:'ac8ff012-7e6c-4215-b793-abaaf6ea27ee',
-          To : 'kimberlykayschulze@gmail.com',
-          From : 'myapphysicsplan@gmail.com',
-          Subject : "My AP Physics Plan Works!",
-          Body : "Hello, " + this.fname + " " + this.lname + ",<br> Thank you for signing up with My AP Physics Plan. <br><br>" +
-          "I will be contacting you shortly.  <br>Your message is:  <br>" + this.message + "<br>From email address: " + this.email +
-          "<br>~ Kim Schulze"
-        })
-        .then(
-          message => alert("Mail sent successfully.")
-           );
-          this.contactForm.reset();
-         }
-  </script>
+
 
 <body class="mat-typography">
   <app-root></app-root>
