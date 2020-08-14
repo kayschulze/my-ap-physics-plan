@@ -19,8 +19,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MessageSlideComponent } from './message-slide/message-slide.component';
 
-import { Email } from 'https://smtpjs.com/v3/smtp.js';
-
 @NgModule({
   declarations: [
     AppComponent,
