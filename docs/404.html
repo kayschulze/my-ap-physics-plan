@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="styles.8ce01c305f51c38aba79.css"><!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>My Ap Physics Plan</title>
-  <base href="/">
+  <base href="/my-ap-physics-plan/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -25,28 +25,29 @@
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
       crossorigin="anonymous"></script>
   <script type="text/javascript">
-    function sendEmail() {
-      this.fname = document.getElementById("fname").value;
-      this.lname = document.getElementById("lname").value;
-      this.email = document.getElementById("email").value;
-      this.message = document.getElementById("message").value;
-      Email.send({
-          SecureToken:'ac8ff012-7e6c-4215-b793-abaaf6ea27ee',
-          To : 'kimberlykayschulze@gmail.com',
-          From : 'myapphysicsplan@gmail.com',
-          Subject : "My AP Physics Plan Works!",
-          Body : "Hello, " + this.fname + " " + this.lname + ",<br> Thank you for signing up with My AP Physics Plan. <br><br>" +
-          "I will be contacting you shortly.  <br>Your message is:  <br>" + this.message + "<br>From email address: " + this.email +
-          "<br>~ Kim Schulze"
-        })
-        .then(
-          message => alert("Mail sent successfully.")
-           );
-          this.contactForm.reset();
-         }
+        function sendEmail() {
+          this.fname = document.getElementById("fname").value;
+          this.lname = document.getElementById("lname").value;
+          this.email = document.getElementById("email").value;
+          this.message = document.getElementById("message").value;
+          Email.send({
+              SecureToken:'ac8ff012-7e6c-4215-b793-abaaf6ea27ee',
+              To : 'kimberlykayschulze@gmail.com',
+              From : 'myapphysicsplan@gmail.com',
+              Subject : "My AP Physics Plan Works!",
+              Body : "Hello, " + this.fname + " " + this.lname + ",<br> Thank you for signing up with My AP Physics Plan. <br><br>" +
+              "I will be contacting you shortly.  <br>Your message is:  <br>" + this.message + "<br>From email address: " + this.email +
+              "<br>~ Kim Schulze"
+            })
+            .then(
+              message => alert("Mail sent successfully.")
+               );
+              this.contactForm.reset();
+             }
   </script>
+<link rel="stylesheet" href="styles.8ce01c305f51c38aba79.css"></head>
 
 <body class="mat-typography">
   <app-root></app-root>
-<script src="runtime.e227d1a0e31cbccbf8ec.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="main.3cd902baac0dbf9a5917.js" defer></script></body>
+<script src="runtime.e227d1a0e31cbccbf8ec.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="main.ebc74108432bda9f696f.js" defer></script></body>
 </html>
