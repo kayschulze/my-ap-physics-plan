@@ -12,3 +12,14 @@ h2 {
   font-size: 45px;
   text-align: center;
 }
+
+.portrait {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+#abouttype {
+  font-weight: bold;
+}
